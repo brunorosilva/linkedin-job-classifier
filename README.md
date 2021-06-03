@@ -46,7 +46,7 @@ com Git
 ```
 $ git clone https://github.com/brunorosilva/nlp-classificacao-de-vagas.git
 $ cd nlp-classificacao-de-vagas
-~/nlp-classificacao-de-vagas $ pip install requirements.txt
+~/nlp-classificacao-de-vagas $ pip install -r requirements.txt
 ```
 e usar o comando
 ```
