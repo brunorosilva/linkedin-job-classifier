@@ -1,4 +1,4 @@
-# NLP - Classificacao de Vagas
+# NLP - Classificação de Vagas
 
 Este projeto é uma atividade da Especialização em Inteligência Artificial da PECE-Poli, disciplina de Processamento de Linguagem Natural.
 
@@ -40,7 +40,19 @@ Recorte do relatório de tuning com o modelo vencedor.
 
 ## 3. Webapp Streamlit
 
-Para a interação mais fluida com o modelo foi criado um webapp usando Streamlit e disponibilizado via Heroku pela url TODO (projeto blablabla ) onde o usuário pode escolher entre exemplos simples, exemplos tirados do Linkedin que não estão na base de treino nem de teste ou um input manual.
+Para a interação mais fluida com o modelo foi criado um webapp usando [Streamlit](https://streamlit.io/) e para acessá-lo basta instalar as bibliotecas necessárias
+
+com Git
+```
+$ git clone https://github.com/brunorosilva/nlp-classificacao-de-vagas.git
+$ cd nlp-classificacao-de-vagas
+~/nlp-classificacao-de-vagas $ pip install requirements.txt
+```
+e usar o comando
+```
+~/nlp-classificacao-de-vagas $ streamlit run dashboard.py
+```
+onde o usuário pode escolher entre exemplos simples, exemplos tirados do Linkedin que não estão na base de treino nem de teste ou um input manual.
 
 O webapp é extremamente simples e serve como prova de conceito, basta escolher entre as opções e o dashboard criará um gráfico de barras mostrando a probabilidade estimada pelo modelo entre os três títulos possíveis.
 
