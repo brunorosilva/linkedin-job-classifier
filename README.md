@@ -23,4 +23,22 @@ O Dataset será disponibilizado somente para o avaliador do projeto, uma vez que
 ### Modelo
 O modelo foi criado utilizando [Tensorflow Keras](https://github.com/tensorflow/tensorflow/) e outros métodos abordados durante o curso.
 
-<image src='nn.svg' width=500 style="background-color:white">
+Para o tuning de hiperparâmetros foi desenvolvido um método personalizado de gridsearch com a criação de um relatório interativo para a obtenção de um modelo com a melhor arquitetura encontrada. O arquivo com todos os testes realizados (mais de 200MB) pode ser solicitado caso necessário, mas um exemplo pequeno deste relatório está disponível no arquivo `tuning-process-report.html.`
+
+A melhor arquitetura de modelo encontrada foi com os seguintes hiperparâmetros:
+- 6 camadas ocultas, com 8 neurônios cada;
+- função de ativação tanh;
+- batch_size=64;
+- função de custo SGD.
+
+Diagrama do modelo escolhido, com exatidão de 86.85% na base de validação.
+<image src='nn.png' align='center' width=500>
+
+
+### Webapp Streamlit
+
+Para a interação mais fluida com o modelo foi criado um webapp usando Streamlit e disponibilizado via Heroku pela url TODO (projeto blablabla ) onde o usuário pode escolher entre exemplos simples, exemplos tirados do Linkedin que não estão na base de treino nem de teste ou um input manual.
+
+O webapp é extremamente simples e serve como prova de conceito, basta escolher entre as opções e o dashboard criará um gráfico de barras mostrando a probabilidade estimada pelo modelo entre os três títulos possíveis.
+
+<img src='dashboard.png'>
