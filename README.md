@@ -26,9 +26,10 @@ O modelo foi criado utilizando [Tensorflow Keras](https://github.com/tensorflow/
 Para o tuning de hiperparâmetros foi desenvolvido um método personalizado de gridsearch com a criação de um relatório interativo para a obtenção de um modelo com a melhor arquitetura encontrada. O arquivo com todos os testes realizados (mais de 400MB) pode ser solicitado caso necessário, mas um exemplo pequeno deste relatório está disponível no arquivo `tuning-process-report.html.`
 
 A melhor arquitetura de modelo encontrada foi com os seguintes hiperparâmetros:
-- 6 camadas ocultas, com 8 neurônios cada;
+- 8 camadas ocultas, com 8 neurônios cada;
 - função de ativação tanh;
 - batch_size=64;
+- 20 épocas de treinamento;
 - função de custo SGD.
 
 Diagrama do modelo escolhido, com exatidão de 86.85% na base de validação.
