@@ -13,17 +13,17 @@ O projeto foi desenvolvido a partir de três etapas:
 2. Criação de um modelo de Deep Learning para classificação multi-classes;
 3. Criação de um webapp para a interação mais fluida com o modelo usando Streamlit.
 
-### Dataset
+## 1. Dataset
 O Dataset foi criado utilizando [Selenium](https://github.com/SeleniumHQ/selenium/tree/trunk/py) a partir de um script de scraping disponível no arquivo `scraper/scraper.py` .
 
 O processo consistiu em pesquisar por vagas de Data Scientist, Data Analyst e Data Engineer (mil de cada título, um título por vez), e buscar a descrição de cada vaga conforme fornecido pela empresa contratante.
 
 O Dataset será disponibilizado somente para o avaliador do projeto, uma vez que não foram solicitadas as autorizações do Linkedin para a realização do scraping e tampouco das empresas envolvidas.
 
-### Modelo
+## 2. Modelo
 O modelo foi criado utilizando [Tensorflow Keras](https://github.com/tensorflow/tensorflow/) e outros métodos abordados durante o curso.
 
-Para o tuning de hiperparâmetros foi desenvolvido um método personalizado de gridsearch com a criação de um relatório interativo para a obtenção de um modelo com a melhor arquitetura encontrada. O arquivo com todos os testes realizados (mais de 200MB) pode ser solicitado caso necessário, mas um exemplo pequeno deste relatório está disponível no arquivo `tuning-process-report.html.`
+Para o tuning de hiperparâmetros foi desenvolvido um método personalizado de gridsearch com a criação de um relatório interativo para a obtenção de um modelo com a melhor arquitetura encontrada. O arquivo com todos os testes realizados (mais de 400MB) pode ser solicitado caso necessário, mas um exemplo pequeno deste relatório está disponível no arquivo `tuning-process-report.html.`
 
 A melhor arquitetura de modelo encontrada foi com os seguintes hiperparâmetros:
 - 6 camadas ocultas, com 8 neurônios cada;
@@ -32,13 +32,16 @@ A melhor arquitetura de modelo encontrada foi com os seguintes hiperparâmetros:
 - função de custo SGD.
 
 Diagrama do modelo escolhido, com exatidão de 86.85% na base de validação.
-<image src='nn.png' align='center' width=500>
+![image alt ><](imgs/nn.png)
+
+Recorte do relatório de tuning com o modelo vencedor.
+![image alt ><](imgs/tuning.png)
 
 
-### Webapp Streamlit
+## 3. Webapp Streamlit
 
 Para a interação mais fluida com o modelo foi criado um webapp usando Streamlit e disponibilizado via Heroku pela url TODO (projeto blablabla ) onde o usuário pode escolher entre exemplos simples, exemplos tirados do Linkedin que não estão na base de treino nem de teste ou um input manual.
 
 O webapp é extremamente simples e serve como prova de conceito, basta escolher entre as opções e o dashboard criará um gráfico de barras mostrando a probabilidade estimada pelo modelo entre os três títulos possíveis.
 
-<img src='dashboard.png'>
+![image alt ><](imgs/dashboard.png)
