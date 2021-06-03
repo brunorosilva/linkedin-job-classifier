@@ -3,7 +3,7 @@ import itertools
 import nltk
 nltk.download('stopwords')
 stops = nltk.corpus.stopwords.words('english')
-nltk.download('punkt')
+# nltk.download('punkt')
 import pandas as pd
 import numpy as np
 from nltk.tokenize import word_tokenize
