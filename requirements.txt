@@ -1,8 +1,2 @@
-selenium==3.141.0
-plotly==4.14.3
-nltk==3.5
-numpy==1.17.4
+numpy==1.19.2
 pandas==1.2.3
-streamlit==0.75.0
-tqdm==4.56.0
-tensorflow==2.4.1

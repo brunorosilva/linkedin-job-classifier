@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "nlp-classificacao-de-vagas"
+version = "0.1.0"
+description = ""
+authors = ["Bruno Rodrigues"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7.1"
+plotly = "^4.14.3"
+nltk = "^3.5"
+numpy = "^1.19.2"
+pandas = "^1.2.3"
+streamlit = "^0.75.0"
+tensorflow = "^2.4.1"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+Sphinx = "^3.4.2"
+myst-parser = "^0.13.1"
+pydata-sphinx-theme = "^0.4.1"
+ghp-import = "^1.0.0"
+tqdm = "^4.56.0"
+selenium = "^3.141.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
