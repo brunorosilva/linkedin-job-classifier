@@ -10,3 +10,4 @@ RUN pip3 install poetry
 RUN poetry config virtualenvs.create false
 RUN poetry install --no-dev
 EXPOSE 8501
+CMD poetry run streamlit run app.py

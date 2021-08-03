@@ -66,7 +66,7 @@ if inputs_possiveis == "Input customizado":
         height=500,
     )
 
-model = load_model("streamlit_app/nlp_model")
+model = load_model("nlp_model")
 
 if descricao_vaga:
 
@@ -83,6 +83,7 @@ if descricao_vaga:
             ]
         )
     )
+
     predicao_dict = {0: "Data Scientist", 1: "Data Analyst", 2: "Data Engineer"}
     # if not exemplos_btn_linkedin and not exemplos_btn_simples:
     #     prefix = "Este profissional deve ser um "

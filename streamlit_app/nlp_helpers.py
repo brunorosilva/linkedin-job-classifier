@@ -14,11 +14,11 @@ from nltk.tokenize import word_tokenize
 stemmer = SnowballStemmer("english")
 import ast
 
-fl = open("streamlit_app/vocab.txt", "r")  # loading our vocab
+fl = open("vocab.txt", "r")  # loading our vocab
 conteudo = fl.read()
 vocab = ast.literal_eval(conteudo)
 fl.close()
-fl = open("streamlit_app/indice_de_palavras.txt", "r")  # loading our word index dict
+fl = open("indice_de_palavras.txt", "r")  # loading our word index dict
 conteudo = fl.read()
 indice_de_palavras = ast.literal_eval(conteudo)
 fl.close()
